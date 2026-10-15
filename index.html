@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miguel Sanz Flatpak repository</title>
+<meta name="description" content="Flatpak repository of open-source Linux configurators: Ultimate Pad Config, Cyclone Pad Config and Shark Mouse Config.">
+<link rel="icon" href="icon.svg">
+<style>
+  :root { --bg: #141416; --card: #1d1d21; --line: #2e2e34; --fg: #ececf0; --muted: #a2a2ad; --accent: #4cd964; --code: #0e0e10; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f6f8; --card: #ffffff; --line: #dcdce2; --fg: #18181b; --muted: #5c5c66; --accent: #1f9d3a; --code: #eeeef2; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, "Cantarell", "Segoe UI", sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); }
+  pre { background: var(--code); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; margin: 10px 0; }
+  code { font: 0.9rem/1.5 ui-monospace, "DejaVu Sans Mono", monospace; }
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .app img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); display: block; }
+  .app div { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .app h3 { margin: 0; font-size: 1.1rem; }
+  .app a.button { margin-top: auto; align-self: flex-start; background: var(--accent); color: #0b1a0f; text-decoration: none; font-weight: 600; padding: 7px 14px; border-radius: 999px; }
+  a { color: var(--accent); }
+  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+  footer { margin-top: 48px; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Miguel Sanz Flatpak repository</h1>
+  <p class="muted">Open-source Linux configurators for gamepads and mice, signed and kept up to date through Flatpak.</p>
+
+  <h2>1. Add the repository (once)</h2>
+  <pre><code>flatpak remote-add --user --if-not-exists miguelsanz https://miguelsanzbr.github.io/flatpak/miguelsanz.flatpakrepo</code></pre>
+  <p class="muted">The apps run on the Freedesktop runtime from Flathub. Most distributions already have Flathub set up; if yours does not, add it first:</p>
+  <pre><code>flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</code></pre>
+  <p class="muted">Updates arrive with <code>flatpak update</code> or your software center.</p>
+
+  <h2>2. Install an app</h2>
+  <div class="apps">
+    <article class="app">
+      <img src="https://raw.githubusercontent.com/MiguelSanzBr/8bitdo-ultimate2-linux/v0.1.0-beta.6/docs/screenshots/home.png" alt="Ultimate Pad Config home page" loading="lazy">
+      <div>
+        <h3>Ultimate Pad Config</h3>
+        <p class="muted">For the 8BitDo Ultimate 2 Wireless controller: profiles, remapping, sticks, triggers, gyro, LEDs.</p>
+        <pre><code>flatpak install --user miguelsanz io.github.miguelsanzbr._8bitdo-ultimate2-linux</code></pre>
+        <a class="button" href="ultimate-pad-config.flatpakref">Install (.flatpakref)</a>
+        <a href="https://github.com/MiguelSanzBr/8bitdo-ultimate2-linux">Source code</a>
+      </div>
+    </article>
+    <article class="app">
+      <img src="https://raw.githubusercontent.com/MiguelSanzBr/gamesir-cyclone2-linux/v0.1.0-beta.3/docs/screenshots/home.png" alt="Cyclone Pad Config home page" loading="lazy">
+      <div>
+        <h3>Cyclone Pad Config</h3>
+        <p class="muted">For the GameSir Cyclone 2 controller: profiles, remapping, dead zones, hair trigger, gyro, lighting.</p>
+        <pre><code>flatpak install --user miguelsanz io.github.miguelsanzbr.gamesir-cyclone2-linux</code></pre>
+        <a class="button" href="cyclone-pad-config.flatpakref">Install (.flatpakref)</a>
+        <a href="https://github.com/MiguelSanzBr/gamesir-cyclone2-linux">Source code</a>
+      </div>
+    </article>
+    <article class="app">
+      <img src="https://raw.githubusercontent.com/MiguelSanzBr/attackshark-x11-linux/v0.1.0-beta.3/docs/screenshots/dpi.png" alt="Shark Mouse Config DPI page" loading="lazy">
+      <div>
+        <h3>Shark Mouse Config</h3>
+        <p class="muted">For the ATTACK SHARK X11 wireless mouse: DPI stages, polling rate, buttons, lighting, sleep timers.</p>
+        <pre><code>flatpak install --user miguelsanz io.github.miguelsanzbr.attackshark-x11-linux</code></pre>
+        <a class="button" href="shark-mouse-config.flatpakref">Install (.flatpakref)</a>
+        <a href="https://github.com/MiguelSanzBr/attackshark-x11-linux">Source code</a>
+      </div>
+    </article>
+  </div>
+
+  <h2>3. Allow access to the device (once)</h2>
+  <p class="note">The apps talk to the device through its <code>/dev/hidraw</code> node. A Flatpak cannot install the udev rule
+    that grants this, so install it on the host once, from the app's repository (or with <code>install-udev.sh</code>
+    from the AppImage zip of its release), then replug the device. Each README has the exact command.</p>
+
+  <h2>Português</h2>
+  <p>Adicione o repositório uma vez com o primeiro comando, instale o app do seu controle ou mouse e instale a regra
+    udev no sistema (o comando está no README de cada projeto). As atualizações chegam pelo <code>flatpak update</code>
+    ou pela loja de apps do seu sistema.</p>
+
+  <footer class="muted">
+    <p>Signing key fingerprint: <code>49A5 8198 384A D943 1D76 C43F 52FE DA95 07A6 33EC</code> (<a href="miguelsanz.gpg">key</a>).</p>
+    <p>Independent projects, not affiliated with 8BitDo, GameSir or ATTACK SHARK. Built from the tagged releases with the
+      manifests in <a href="https://github.com/MiguelSanzBr/flatpak">MiguelSanzBr/flatpak</a>; not part of Flathub.</p>
+  </footer>
+</main>
+</body>
+</html>

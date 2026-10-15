@@ -1,0 +1,10 @@
+[Flatpak Ref]
+Title=Ultimate Pad Config
+Name=io.github.miguelsanzbr._8bitdo-ultimate2-linux
+Branch=stable
+Url=https://miguelsanzbr.github.io/flatpak/repo/
+SuggestRemoteName=miguelsanz
+Homepage=https://miguelsanzbr.github.io/flatpak/
+IsRuntime=false
+GPGKey=mDMEatFCHRYJKwYBBAHaRw8BAQdAsDKg8MgpPew6Fn0Iw5K8IDJw+3XBmtH5NM+1i8e9SSS0UE1pZ3VlbCBTYW56IEZsYXRwYWsgcmVwb3NpdG9yeSA8MTIzMjc3NTgwK01pZ3VlbFNhbnpCckB1c2Vycy5ub3JlcGx5LmdpdGh1Yi5jb20+iJAEExYKADgWIQRJpYGYOErZQx12xD9S/tqVB6Yz7AUCatFCHQIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRBS/tqVB6Yz7CM8AQD2Ah8G70smfZP9KMBzZElhL/DMMzJ1jKal7gReKFARrgD+K4DFkDnnNm2URA5t+VaAlCo6FhtYvGS29K9CMbLubQo=
+RuntimeRepo=https://dl.flathub.org/repo/flathub.flatpakrepo
