@@ -68,5 +68,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/MiguelSanzBr/attackshark-x11-linux.git
-        tag: v0.1.0-beta.3
-        commit: 05265212456eaeace6d6cd182793005e0a7d9e3d
+        tag: v0.1.0-beta.4
+        commit: 6cf721d375dc64df237f13107844ddc0db499b29

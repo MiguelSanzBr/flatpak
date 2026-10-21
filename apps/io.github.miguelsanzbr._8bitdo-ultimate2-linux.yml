@@ -68,5 +68,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/MiguelSanzBr/8bitdo-ultimate2-linux.git
-        tag: v0.1.0-beta.6
-        commit: 310a272c713f998d4604f021dc74c3ad32e93bdd
+        tag: v0.1.0-beta.7
+        commit: ff2b39b06124de50f5a93eb3c7034c7c75315efd

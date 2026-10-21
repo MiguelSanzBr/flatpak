@@ -68,5 +68,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/MiguelSanzBr/gamesir-cyclone2-linux.git
-        tag: v0.1.0-beta.3
-        commit: 2b26f5bb0976a132790acc3a9ebef4c2f467408a
+        tag: v0.1.0-beta.4
+        commit: 24da19371d931d4b74ee6144524e7b442b63c12a
